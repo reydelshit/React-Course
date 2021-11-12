@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const Home = () => {
 
-    const {data, isPending, error} = useFetch('https://reydelblog.netlify.app/blogs')
+    const {data, isPending, error} = useFetch('./data/database.json')
 
     return (
         <div className="home">

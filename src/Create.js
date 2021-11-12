@@ -16,7 +16,7 @@ const Create = () => {
 
         setIspending(true)
         
-        fetch('https://reydelblog.netlify.app/blogs/', {
+        fetch('./data/database.json', {
             method: 'POST',
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify(blog)
