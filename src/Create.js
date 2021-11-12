@@ -16,14 +16,13 @@ const Create = () => {
 
         setIspending(true)
         
-        fetch('./data/database.json', {
+        fetch('https://api.npoint.io/3958194093f3495eb056', {
             method: 'POST',
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify(blog)
 
         }).then(() => {
             setIspending(false)
-            // history.go(-1)
             history.push('/')
         })
     }
