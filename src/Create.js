@@ -16,7 +16,7 @@ const Create = () => {
 
         setIspending(true)
         
-        fetch('https://api.npoint.io/3958194093f3495eb056', {
+        fetch('https://my-json-server.typicode.com/reydelshit/database/blogs', {
             method: 'POST',
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify(blog)

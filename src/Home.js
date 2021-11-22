@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const Home = () => {
 
-    const {data, isPending, error} = useFetch('https://api.npoint.io/3958194093f3495eb056')
+    const {data, isPending, error} = useFetch('https://my-json-server.typicode.com/reydelshit/database/blogs')
 
     return (
         <div className="home">

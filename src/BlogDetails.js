@@ -4,11 +4,11 @@ import useFetch from './useFetch'
 
 const BlogDetails = () => {
     const { id } = useParams()
-    const { data: blog, error, isPending} = useFetch('https://api.npoint.io/3958194093f3495eb056/' + id)
+    const { data: blog, error, isPending} = useFetch('https://my-json-server.typicode.com/reydelshit/database/blogs/' + id)
     const history = useHistory();
 
     const handleDelete= () => {
-        fetch('https://api.npoint.io/3958194093f3495eb056/' + blog.id,{
+        fetch('https://my-json-server.typicode.com/reydelshit/database/blogs/' + blog.id,{
             method: 'DELETE'
         }).then(() => {
             history.push('/')
